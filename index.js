@@ -17,7 +17,7 @@ function displayRepositories(event, data) {
   document.getElementById("repositories").innerHTML = repoList;
 }
 
-// 
+//
 // function showRepositories(event, data) {
 //   var repos = JSON.parse(this.responseText)
 //   console.log(repos)
