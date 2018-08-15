@@ -12,7 +12,7 @@ function displayRepositories(event, data) {
   var repos = JSON.parse(this.responseText);
   console.log(repos);
   // iterate and format the output
-  const repoList = `<ul>${repos.map(repo => '<li>' + repo.name + '</li>').join('')}`
+  const repoList = `<ul>${repos.map(repo => '<li>' + repo.name + '</li>').join('')}</ul>`
   // place the formatted output into our DOM
   document.getElementById("repositories").innerHTML = repoList;
 }
