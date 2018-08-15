@@ -6,5 +6,7 @@ function getRepositories() {
 }
 // called within getRepos: Handler
 function displayRepositories(event, data) {
-  console.log(this.responseText)
+  var repos = JSON.parse(this.responseText);
+  const repoList = `<ul>${repos.map(repo => '<li>' + repo.name + '</li>').join('')}`
+  document.getElementById("repositories").innerHTML = repoList;
 }
